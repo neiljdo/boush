@@ -31,9 +31,7 @@ void loop() {
   // Do nothing while waiting for user input
   while (Serial.available() == 0);
   color = Serial.readString();
-  color = color.substring(0, color.length() - 1);
-  
-  Serial.println(color.length());
+
   if (color == "red") {
     targetLED = redLED;
   } else if (color == "yellow") {
