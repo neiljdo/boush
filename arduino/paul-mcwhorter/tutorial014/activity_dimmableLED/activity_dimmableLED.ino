@@ -12,7 +12,6 @@ void setup() {
   // put your setup code here, to run once:
   pinMode(readPin, INPUT);
   pinMode(greenLED, OUTPUT);
-  Serial.begin(9600);
 }
 
 void loop() {
